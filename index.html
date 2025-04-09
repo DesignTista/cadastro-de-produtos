@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typescript guga</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="js/produto.js" defer></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <h1>Cadastro de Produto e Cálculo de Preço</h1>
+<br>
+<br>
+  <h2>Cadastro de Produto</h2>
+  <br>
+
+  <label for="nomeProduto">Nome do Produto:</label>
+  <input type="text" id="nomeProduto" placeholder="Ex: Camiseta">
+
+  <label for="precoProduto">Preço do Produto (R$):</label>
+  <input type="number" id="precoProduto" placeholder="Ex: 50" min="0" step="0.01">
+
+  <button id="cadastrarProduto">Cadastrar Produto</button >
+    <br>
+<br>
+
+  <h3>O produto:</h3>
+  <p>(cadastre algum pra ele aparecer aqui)</p>
+  <p id="produtoNome"></p>
+  <p id="produtoPreco"></p>
+
+  <label for="inputImposto">Informe o imposto (%): </label>
+  <input type="number" id="inputImposto" placeholder="Ex: 10" min="0">
+
+  <button id="calcularPreco">Calcular Preço Final</button>
+  <p id="precoFinal"></p>
+</body>
+</html>
